@@ -1,0 +1,31 @@
+.cart-item {
+  margin: 10px 20px;
+  position: relative;
+  background-color: var(--bg-primary-100);
+  border-radius: 6px;
+  padding: 10px;
+}
+
+.cart-item .name {
+  margin: 0px;
+  font-weight: var(--fw-semibold);
+}
+
+.cart-item .quantity {
+  margin: 5px 0px;
+  background-color: var(--bg-primary-100);
+}
+
+.cart-item .btn-delete {
+  position: absolute;
+  right: 10px;
+  bottom: 30px;
+  background-color: var(--bg-primary-100);
+  color: var(--text-primary);
+  padding: 5px;
+  padding-bottom: 0px;
+}
+
+.cart-item .btn-delete:hover {
+  background-color: var(--bg-primary-400);
+}

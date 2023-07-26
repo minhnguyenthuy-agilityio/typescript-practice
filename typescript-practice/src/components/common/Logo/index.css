@@ -1,0 +1,11 @@
+.logo {
+  font-family: var(--fm-secondary);
+  font-size: 35px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: var(--text-tertiary);
+}
+
+.logo span {
+  color: var(--text-quaternary);
+}

@@ -1,0 +1,9 @@
+{
+  "name": "server-api",
+  "scripts": {
+    "start-db": "json-server --watch db.json --host 127.0.0.1"
+  },
+  "devDependencies": {
+    "json-server": "^0.17.3"
+  }
+}

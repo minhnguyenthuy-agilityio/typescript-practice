@@ -1,0 +1,145 @@
+{
+  "users": [
+    {
+      "id": "df4ed166-7a73-4c6b-aabc-237e4a4d57eb",
+      "name": "Mai Huynh",
+      "email": "minhng271@gmail.com",
+      "password": "1234abcd"
+    },
+    {
+      "id": "545d3db5-5472-4a8a-90f2-8372db9f43fe",
+      "name": "Minh Nguyen",
+      "email": "minhng21@gmail.com",
+      "password": "1245khoi"
+    },
+    {
+      "id": "0a0ea77d-f245-4c9c-a927-72927d368901",
+      "name": "min min",
+      "email": "minu@gmail.com",
+      "password": "1234abcdm"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "lira earrings",
+      "price": 20,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam placerat, augue a volutpat hendrerit, sapien tortor faucibus augue, a maximus elit ex vitae libero. Sed quis mauris eget arcu facilisis consequat sed eu felis. ",
+      "image": "https://res.cloudinary.com/de2x8dwvf/image/upload/v1689736524/TS-practice/Lira_Earrings_crgcew.jpg",
+      "quantity": 20,
+      "discountPercent": 0
+    },
+    {
+      "id": 2,
+      "name": "hal earrings",
+      "price": 25,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam placerat, augue a volutpat hendrerit, sapien tortor faucibus augue, a maximus elit ex vitae libero. Sed quis mauris eget arcu facilisis consequat sed eu felis. ",
+      "image": "https://res.cloudinary.com/de2x8dwvf/image/upload/v1689736524/TS-practice/Hal_Earrings_zwh8e4.jpg",
+      "quantity": 2,
+      "discountPercent": 20
+    },
+    {
+      "id": 3,
+      "name": "kaede hair pin set of 3",
+      "price": 21,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam placerat, augue a volutpat hendrerit, sapien tortor faucibus augue, a maximus elit ex vitae libero. Sed quis mauris eget arcu facilisis consequat sed eu felis. ",
+      "image": "https://res.cloudinary.com/de2x8dwvf/image/upload/v1689736524/TS-practice/Kaede_Hair_Pin_Set_Of_3_dovnxz.jpg",
+      "quantity": 1,
+      "discountPercent": 0
+    },
+    {
+      "id": 4,
+      "name": "hair pin set of 3",
+      "price": 22,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam placerat, augue a volutpat hendrerit, sapien tortor faucibus augue, a maximus elit ex vitae libero. Sed quis mauris eget arcu facilisis consequat sed eu felis. ",
+      "image": "https://res.cloudinary.com/de2x8dwvf/image/upload/v1689736524/TS-practice/Hair_Pin_Set_of_3_qk5mjd.jpg",
+      "quantity": 0,
+      "discountPercent": 0
+    },
+    {
+      "id": 5,
+      "name": "plaine necklace",
+      "price": 23,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam placerat, augue a volutpat hendrerit, sapien tortor faucibus augue, a maximus elit ex vitae libero. Sed quis mauris eget arcu facilisis consequat sed eu felis. ",
+      "image": "https://res.cloudinary.com/de2x8dwvf/image/upload/v1689736525/TS-practice/Plaine_Necklace_lolhdq.jpg",
+      "quantity": 2,
+      "discountPercent": 0
+    },
+    {
+      "id": 6,
+      "name": "yuki hair pin set of 3",
+      "price": 29,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam placerat, augue a volutpat hendrerit, sapien tortor faucibus augue, a maximus elit ex vitae libero. Sed quis mauris eget arcu facilisis consequat sed eu felis. ",
+      "image": "https://res.cloudinary.com/de2x8dwvf/image/upload/v1689736764/TS-practice/Yuki_Hair_Pin_Set_of_3_q4hdeo.jpg",
+      "quantity": 2,
+      "discountPercent": 0
+    },
+    {
+      "id": 7,
+      "name": "yuki hair pin set of 3",
+      "price": 26,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam placerat, augue a volutpat hendrerit, sapien tortor faucibus augue, a maximus elit ex vitae libero. Sed quis mauris eget arcu facilisis consequat sed eu felis. ",
+      "image": "https://res.cloudinary.com/de2x8dwvf/image/upload/v1689736764/TS-practice/Yuki_Hair_Pin_Set_of_3_q4hdeo.jpg",
+      "quantity": 2,
+      "discountPercent": 0
+    },
+    {
+      "id": 8,
+      "name": "bin lucky",
+      "price": 25,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam placerat, augue a volutpat hendrerit, sapien tortor faucibus augue, a maximus elit ex vitae libero. Sed quis mauris eget arcu facilisis consequat sed eu felis. ",
+      "image": "https://res.cloudinary.com/de2x8dwvf/image/upload/v1689736525/TS-practice/Plaine_Necklace_lolhdq.jpg",
+      "quantity": 20,
+      "discountPercent": 0
+    },
+    {
+      "id": 9,
+      "name": "air black",
+      "price": 27,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam placerat, augue a volutpat hendrerit, sapien tortor faucibus augue, a maximus elit ex vitae libero. Sed quis mauris eget arcu facilisis consequat sed eu felis. ",
+      "image": "https://res.cloudinary.com/de2x8dwvf/image/upload/v1689736525/TS-practice/Plaine_Necklace_lolhdq.jpg",
+      "quantity": 10,
+      "discountPercent": 0
+    }
+  ],
+  "cart": [
+    {
+      "id": "df4ed166-7a73-4c6b-aabc-237e4a4d57eb",
+      "products": [
+        {
+          "idProduct": 6,
+          "quantity": 1,
+          "name": "yuki hair pin set of 3",
+          "price": 29
+        },
+        {
+          "idProduct": 1,
+          "quantity": 1,
+          "name": "lira earrings",
+          "price": 20
+        }
+      ]
+    },
+    {
+      "id": "545d3db5-5472-4a8a-90f2-8372db9f43fe",
+      "products": [
+        {
+          "idProduct": 6,
+          "quantity": 2,
+          "name": "yuki hair pin set of 3",
+          "price": "29.00"
+        },
+        {
+          "idProduct": 2,
+          "quantity": 1,
+          "name": "hal earrings",
+          "price": "20.00"
+        }
+      ]
+    },
+    {
+      "id": "0a0ea77d-f245-4c9c-a927-72927d368901",
+      "products": []
+    }
+  ]
+}

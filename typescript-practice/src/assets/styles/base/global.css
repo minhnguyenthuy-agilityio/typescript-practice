@@ -1,0 +1,18 @@
+.App {
+  max-width: 1440px;
+  margin: auto;
+}
+
+.name {
+  margin: 16px 0px;
+  color: var(--text-tertiary);
+  text-transform: capitalize;
+}
+
+.price {
+  color: var(--text-quaternary);
+}
+
+.no-scroll {
+  overflow: hidden;
+}
