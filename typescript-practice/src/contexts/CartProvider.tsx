@@ -49,7 +49,7 @@ const CartProvider = ({ children }: CartProviderProps) => {
       try {
         if (userId) {
           const dataCart = await getCartByUserId(userId);
-          setCart(dataCart);
+          dataCart && setCart(dataCart);
         }
       } catch (error) {
         showToast({
