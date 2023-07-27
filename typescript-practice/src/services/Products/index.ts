@@ -1,6 +1,5 @@
-import { API_PATH_URL } from '@/constants';
-import { Product } from '@/interfaces';
-import { axiosInstance } from '@/services';
+import { Product, FieldOrder, DirectionOrder } from '@/interfaces';
+import { products, getItemById } from '@/mock';
 
 /**
  * Fetch api products
@@ -12,24 +11,37 @@ import { axiosInstance } from '@/services';
  *
  * @returns {Promise<Product[]>} - List products
  */
+
 export const getListProducts = async (
   pageNumber: number,
   limit: number,
   keyword?: string,
-  sortBy?: string,
-  order?: 'asc' | 'desc'
+  sortBy?: FieldOrder,
+  order?: DirectionOrder
 ): Promise<Product[]> => {
-  const res = await axiosInstance.get<Product[]>(API_PATH_URL.PRODUCTS_URL, {
-    params: {
-      _page: pageNumber,
-      _limit: limit,
-      name_like: keyword,
-      _sort: sortBy,
-      _order: order,
-    },
-  });
+  let filteredProducts = [...products];
 
-  return res.data;
+  if (keyword) {
+    filteredProducts = filteredProducts.filter((product) =>
+      product.name.toLowerCase().includes(keyword.toLowerCase())
+    );
+  }
+
+  if (sortBy) {
+    filteredProducts.sort((a, b) =>
+      order === 'asc'
+        ? a[sortBy].toString().localeCompare(b[sortBy].toString())
+        : b[sortBy].toString().localeCompare(a[sortBy].toString())
+    );
+  }
+
+  const startIndex = (pageNumber - 1) * limit;
+  const endIndex = startIndex + limit;
+  const pagedProducts = filteredProducts.slice(startIndex, endIndex);
+
+  await new Promise((resolve) => setTimeout(resolve, 500));
+
+  return pagedProducts;
 };
 
 /**
@@ -38,10 +50,6 @@ export const getListProducts = async (
  *
  * @returns {object} - Product
  */
-export const getProductById = async (productId: number): Promise<Product> => {
-  const res = await axiosInstance.get<Product>(
-    `${API_PATH_URL.PRODUCTS_URL}/${productId}`
-  );
-
-  return res.data;
+export const getProductById = (productId: number) => {
+  return getItemById(products, productId);
 };

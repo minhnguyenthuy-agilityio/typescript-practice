@@ -1,6 +1,5 @@
-import { API_PATH_URL } from '@/constants';
 import { Cart } from '@/interfaces';
-import { axiosInstance } from '@/services';
+import { cart, addItem, getItemById, updateItem } from '@/mock';
 
 /**
  * Add new cart for new user
@@ -8,10 +7,8 @@ import { axiosInstance } from '@/services';
  *
  * @return {object} - Data of cart
  */
-export const createNewCart = async (data: Cart): Promise<Cart> => {
-  const res = await axiosInstance.post<Cart>(API_PATH_URL.CART_URL, data);
-
-  return res.data;
+export const createCart = (data: Cart): Cart => {
+  return addItem(cart, data);
 };
 
 /**
@@ -20,12 +17,9 @@ export const createNewCart = async (data: Cart): Promise<Cart> => {
  *
  * @returns {object} - Data of cart by userId
  */
-export const getCartByUserId = async (userId: string): Promise<Cart> => {
-  const res = await axiosInstance.get<Cart>(
-    `${API_PATH_URL.CART_URL}/${userId}`
-  );
 
-  return res.data;
+export const getCartByUserId = (userId: string): Cart | undefined => {
+  return getItemById(cart, userId);
 };
 
 /**
@@ -35,11 +29,6 @@ export const getCartByUserId = async (userId: string): Promise<Cart> => {
  *
  * @return {object} data of cart
  */
-export const updateCart = async (userId: string, data: Cart): Promise<Cart> => {
-  const res = await axiosInstance.put<Cart>(
-    `${API_PATH_URL.CART_URL}/${userId}`,
-    data
-  );
-
-  return res.data;
+export const updateCart = (data: Cart): Cart | undefined => {
+  return updateItem(cart, data);
 };

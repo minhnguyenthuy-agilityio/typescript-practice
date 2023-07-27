@@ -12,7 +12,7 @@ interface CartItemProps {
   id: number;
   name: string;
   quantity: number;
-  price: string;
+  price: number;
   onDelete: (idSelected: number) => void;
 }
 
@@ -33,7 +33,7 @@ export const CartItem = ({
         <h4 className="name">{name}</h4>
       </Link>
       <p className="quantity">{`Quantity: ${quantity}`}</p>
-      <p className="price">{`$ ${price}`}</p>
+      <p className="price">{`$ ${price.toFixed(2)}`}</p>
       <Button onClick={handleDelete} type="button" className="btn btn-delete">
         <img src={closeButton} alt="close" />
       </Button>
