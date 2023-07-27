@@ -7,7 +7,7 @@ import { ROUTES } from '@/constants';
 
 import { useAuth, useToast } from '@/contexts';
 
-import { getUserByEmail } from '@/services';
+import { findUserByEmail } from '@/services';
 
 import { validateInputForm } from '@/helpers';
 
@@ -57,12 +57,17 @@ export const LoginForm = () => {
 
       // Check data user
       if (!hasError) {
-        const dataUser = await getUserByEmail(inputValue.email);
+        // const dataUser = await getUserByEmail(inputValue.email);
+        const dataUser = findUserByEmail(inputValue.email);
 
-        if (
-          Object.keys(dataUser).length !== 0 &&
-          dataUser.password === inputValue.password
-        ) {
+        // if (
+        //   Object.keys(dataUser).length !== 0 &&
+        //   dataUser.password === inputValue.password
+        // )
+        if (dataUser && dataUser.password === inputValue.password) {
+
+          // console.log(dataUser);
+          
           const user = {
             id: dataUser.id,
             name: dataUser.name,
@@ -76,7 +81,7 @@ export const LoginForm = () => {
           navigate(ROUTES.HOMEPAGE);
         } else {
           setErrorMessage({
-            ...errorMessage,
+            ...initialErrorMsgs,
             form: 'Incorrect email or password.',
           });
         }

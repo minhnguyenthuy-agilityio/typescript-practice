@@ -1,12 +1,12 @@
 const getPriceWithDiscount = (
   price: number,
   discountPercent?: number
-): string => {
+): number => {
   const priceProduct = discountPercent
     ? price - price * (discountPercent / 100)
     : price;
 
-  return priceProduct.toFixed(2);
+  return priceProduct;
 };
 
 export { getPriceWithDiscount };

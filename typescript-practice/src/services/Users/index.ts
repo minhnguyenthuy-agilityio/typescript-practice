@@ -1,6 +1,9 @@
-import { API_PATH_URL } from '@/constants';
-import { User, UserWithPassword } from '@/interfaces';
-import { axiosInstance } from '@/services';
+import { User } from '@/interfaces';
+import { users, addItem, getItemById } from '@/mock';
+
+interface Users extends User {
+  password: string;
+}
 
 /**
  * Get data of user by userId
@@ -8,10 +11,8 @@ import { axiosInstance } from '@/services';
  *
  * @returns {Promise<User>} - User object
  */
-export const getUserById = async (id: string): Promise<User> => {
-  const res = await axiosInstance.get<User>(`${API_PATH_URL.USERS_URL}/${id}`);
-
-  return res.data;
+export const getUserById = (id: string) => {
+  return getItemById(users, id);
 };
 
 /**
@@ -21,12 +22,8 @@ export const getUserById = async (id: string): Promise<User> => {
  *
  * @returns {Promise<User>} - User object
  */
-export const getUserByEmail = async (email: string): Promise<UserWithPassword> => {
-  const res = await axiosInstance.get<UserWithPassword[]>(
-    `${API_PATH_URL.USERS_URL}?email=${email}`
-  );
-
-  return res.data[0];
+export const findUserByEmail = (email: string): Users | undefined => {
+  return users.find((user) => user.email === email);
 };
 
 /**
@@ -35,8 +32,6 @@ export const getUserByEmail = async (email: string): Promise<UserWithPassword> =
  *
  * @returns {Promise<User>} - User object
  */
-export const createUser = async (data: User): Promise<User> => {
-  const res = await axiosInstance.post<User>(API_PATH_URL.USERS_URL, data);
-
-  return res.data;
+export const addUser = (data: User): User => {
+  return addItem(users, data);
 };

@@ -33,7 +33,8 @@
       "@/constants": ["constants"],
       "@/helpers": ["helpers"],
       "@/pages": ["pages"],
-      "@/interfaces": ["interfaces"]
+      "@/interfaces": ["interfaces"],
+      "@/mock": ["mock"]
     },
     "incremental": true
   },

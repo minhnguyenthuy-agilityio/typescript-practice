@@ -35,7 +35,7 @@ export const CartSideBar = ({ onCloseCart }: CartSideBarProps) => {
       };
 
       setCart(cartUser);
-      updateCart(userData.id, cartUser);
+      updateCart(cartUser);
 
       showToast({
         hasPopup: true,
