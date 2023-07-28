@@ -49,14 +49,15 @@ const AuthProvider = ({ children }: AuthProviderProps) => {
     const getData = async () => {
       try {
         if (userId) {
-          const data = await getUserById(userId);
-          const user: User = {
-            id: userId,
-            name: data.name,
-            email: data.email,
-          };
-
-          setUserData(user);
+          const data = getUserById(userId);
+          if (data) {
+            const user: User = {
+              id: userId,
+              name: data.name,
+              email: data.email,
+            };
+            setUserData(user);
+          }
         }
       } catch (error) {
         showToast({

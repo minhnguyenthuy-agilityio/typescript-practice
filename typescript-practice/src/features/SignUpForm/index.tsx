@@ -4,7 +4,7 @@ import { v4 as uuidv4 } from 'uuid';
 
 import { Button, Input, Logo, FormGroup } from '@/components';
 
-import { createUser, getUserByEmail, createNewCart } from '@/services';
+import { addUser, findUserByEmail, createCart } from '@/services';
 
 import { validateInputForm } from '@/helpers';
 
@@ -56,7 +56,7 @@ export const SignUpForm = () => {
 
       if (!hasError) {
         // Check email already exists
-        const dataUser = await getUserByEmail(inputValue.email);
+        const dataUser = findUserByEmail(inputValue.email);
 
         if (dataUser) {
           // Show error if email already exists
@@ -78,8 +78,8 @@ export const SignUpForm = () => {
             products: [],
           };
 
-          await createUser(newUser);
-          await createNewCart(newCart);
+          addUser(newUser);
+          createCart(newCart);
 
           const user = {
             id: newUser.id,

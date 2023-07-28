@@ -42,9 +42,9 @@ export const ProductDetail = () => {
       try {
         setLoading(true);
 
-        const data = await getProductById(Number(productId));
+        const data = getProductById(Number(productId));
 
-        setProduct(data);
+        data && setProduct(data);
       } catch {
         showToast({
           hasPopup: true,
@@ -73,7 +73,7 @@ export const ProductDetail = () => {
     quantityAvailable = quantity - hasProductInCart.quantity;
   }
 
-  const handleAddCart = async () => {
+  const handleAddCart =  () => {
     try {
       let cartUser: Cart = {
         id: '',
@@ -117,8 +117,7 @@ export const ProductDetail = () => {
       }
 
       setCart(cartUser);
-
-      await updateCart(userData.id, cartUser);
+      updateCart(cartUser);
 
       showToast({
         hasPopup: true,
