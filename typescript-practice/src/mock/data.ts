@@ -33,7 +33,7 @@ const products: Product[] = [
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam placerat, augue a volutpat hendrerit, sapien tortor faucibus augue, a maximus elit ex vitae libero. Sed quis mauris eget arcu facilisis consequat sed eu felis. ',
     image:
-      'https://res.cloudinary.com/de2x8dwvf/image/upload/v1689736524/TS-practice/Lira_Earrings_crgcew.jpg',
+      'https://res.cloudinary.com/de2x8dwvf/image/upload/v1690739723/TS-practice/Lira_Earrings_osvkhh.jpg',
     quantity: 20,
     discountPercent: 0,
   },
@@ -44,7 +44,7 @@ const products: Product[] = [
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam placerat, augue a volutpat hendrerit, sapien tortor faucibus augue, a maximus elit ex vitae libero. Sed quis mauris eget arcu facilisis consequat sed eu felis. ',
     image:
-      'https://res.cloudinary.com/de2x8dwvf/image/upload/v1689736524/TS-practice/Hal_Earrings_zwh8e4.jpg',
+      'https://res.cloudinary.com/de2x8dwvf/image/upload/v1690739723/TS-practice/Lira_Earrings_osvkhh.jpg',
     quantity: 2,
     discountPercent: 20,
   },
@@ -55,7 +55,7 @@ const products: Product[] = [
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam placerat, augue a volutpat hendrerit, sapien tortor faucibus augue, a maximus elit ex vitae libero. Sed quis mauris eget arcu facilisis consequat sed eu felis. ',
     image:
-      'https://res.cloudinary.com/de2x8dwvf/image/upload/v1689736524/TS-practice/Kaede_Hair_Pin_Set_Of_3_dovnxz.jpg',
+      'https://res.cloudinary.com/de2x8dwvf/image/upload/v1690739723/TS-practice/Lira_Earrings_osvkhh.jpg',
     quantity: 1,
     discountPercent: 0,
   },
@@ -66,7 +66,7 @@ const products: Product[] = [
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam placerat, augue a volutpat hendrerit, sapien tortor faucibus augue, a maximus elit ex vitae libero. Sed quis mauris eget arcu facilisis consequat sed eu felis. ',
     image:
-      'https://res.cloudinary.com/de2x8dwvf/image/upload/v1689736524/TS-practice/Hair_Pin_Set_of_3_qk5mjd.jpg',
+      'https://res.cloudinary.com/de2x8dwvf/image/upload/v1690739723/TS-practice/Lira_Earrings_osvkhh.jpg',
     quantity: 0,
     discountPercent: 0,
   },
@@ -77,7 +77,7 @@ const products: Product[] = [
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam placerat, augue a volutpat hendrerit, sapien tortor faucibus augue, a maximus elit ex vitae libero. Sed quis mauris eget arcu facilisis consequat sed eu felis. ',
     image:
-      'https://res.cloudinary.com/de2x8dwvf/image/upload/v1689736525/TS-practice/Plaine_Necklace_lolhdq.jpg',
+      'https://res.cloudinary.com/de2x8dwvf/image/upload/v1690739723/TS-practice/Lira_Earrings_osvkhh.jpg',
     quantity: 2,
     discountPercent: 0,
   },
@@ -88,7 +88,7 @@ const products: Product[] = [
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam placerat, augue a volutpat hendrerit, sapien tortor faucibus augue, a maximus elit ex vitae libero. Sed quis mauris eget arcu facilisis consequat sed eu felis. ',
     image:
-      'https://res.cloudinary.com/de2x8dwvf/image/upload/v1689736764/TS-practice/Yuki_Hair_Pin_Set_of_3_q4hdeo.jpg',
+      'https://res.cloudinary.com/de2x8dwvf/image/upload/v1690739723/TS-practice/Lira_Earrings_osvkhh.jpg',
     quantity: 2,
     discountPercent: 0,
   },
@@ -99,7 +99,7 @@ const products: Product[] = [
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam placerat, augue a volutpat hendrerit, sapien tortor faucibus augue, a maximus elit ex vitae libero. Sed quis mauris eget arcu facilisis consequat sed eu felis. ',
     image:
-      'https://res.cloudinary.com/de2x8dwvf/image/upload/v1689736764/TS-practice/Yuki_Hair_Pin_Set_of_3_q4hdeo.jpg',
+      'https://res.cloudinary.com/de2x8dwvf/image/upload/v1690739723/TS-practice/Lira_Earrings_osvkhh.jpg',
     quantity: 2,
     discountPercent: 0,
   },
@@ -110,7 +110,7 @@ const products: Product[] = [
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam placerat, augue a volutpat hendrerit, sapien tortor faucibus augue, a maximus elit ex vitae libero. Sed quis mauris eget arcu facilisis consequat sed eu felis. ',
     image:
-      'https://res.cloudinary.com/de2x8dwvf/image/upload/v1689736525/TS-practice/Plaine_Necklace_lolhdq.jpg',
+      'https://res.cloudinary.com/de2x8dwvf/image/upload/v1690739723/TS-practice/Lira_Earrings_osvkhh.jpg',
     quantity: 20,
     discountPercent: 0,
   },
@@ -121,7 +121,7 @@ const products: Product[] = [
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam placerat, augue a volutpat hendrerit, sapien tortor faucibus augue, a maximus elit ex vitae libero. Sed quis mauris eget arcu facilisis consequat sed eu felis. ',
     image:
-      'https://res.cloudinary.com/de2x8dwvf/image/upload/v1689736525/TS-practice/Plaine_Necklace_lolhdq.jpg',
+      'https://res.cloudinary.com/de2x8dwvf/image/upload/v1690739723/TS-practice/Lira_Earrings_osvkhh.jpg',
     quantity: 10,
     discountPercent: 0,
   },
